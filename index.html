@@ -1,7 +1,603 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
+=======
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Humanoid Robots, Human-Robot Interaction, Humanoid-Human-Object Interaction, Real-Time Reaction, Intention Prediction, Reactive Motion Control, Object Manipulation, Safety-Aware Robotics, Hierarchical Learning Framework, Human-Object-Human Data, Teleoperation Data">
+  <meta name="description" content="RHINO empowers humanoid robots to perform real-time human-object interactions. It combines hierarchical learning, multimodal intention prediction, and reactive motion control for safe, flexible, and adaptive collaboration with humans.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RHINO: Learning Real-Time Humanoid-Human-Object Interaction from Human Demonstrations</title>
+
+  <!-- Baidu Analytics -->
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?d0ad4e00121817dc0fe2c6b7cbd6fd73";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>      
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="icon" href="./static/images/icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/400f37ca2f.js" crossorigin="anonymous"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="">
+        <span class="icon">
+            <i class="fas fa-home"></i>
+        </span>
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Related Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://hugwbc.github.io/">
+              LowerBody Control: HugWBC
+            </a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+            <img src="./static/images/rhino_icon.png" alt="RHINO Icon" style="vertical-align: middle; margin-right: 10px; width: auto; height: 50px;">
+            RHINO:
+            </h1>
+          <h1 class="title is-1 publication-title" style="font-weight: normal;">Learning Real-Time Humanoid-Human-Object Interaction from Human Demonstrations</h1>
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">
+              <a href="https://timerchen.github.io">Jingxiao Chen</a><sup>*</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://github.com/lixinyao11">Xinyao Li</a><sup>*</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?&user=ofpwpDYAAAAJ">Jiahang Cao</a><sup>*</sup>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://zbzhu99.github.io/">Zhengbang Zhu</a>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://github.com/WentDong">Wentao Dong</a>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            <span class="author-block">
+              <a href="https://minghuanliu.com/">Minghuan Liu</a><sup>†</sup>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://yingwen.io/">Ying Wen</a>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://apex.sjtu.edu.cn/members/yyu">Yong Yu</a>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://bcmi.sjtu.edu.cn/~zhangliqing/">Liqing Zhang</a>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://wnzhang.net/">Weinan Zhang</a>
+            </span>
+          </div>
+          <!-- <br> -->
+
+          <!-- <div class="is-size-4 publication-authors">
+            <span class="author-block">Shanghai Jiao Tong University</span>
+          </div> -->
+
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">* Equal Contribution</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">† Project Lead</span>
+          </div>
+          <!-- <br> -->
+          <img src="./static/images/sjtu_logo.png" width="40%" style="margin-right: 20px;"> 
+          <img src="./static/images/apex_logo_final2.png" width="30%" style="margin-right: 0;"> 
+          <br>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="resources/paper.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2502.13134"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/Ps7dIM_cYqI"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/TimerChen/RHINO"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Bilibili Link. -->
+              <!-- <span class="link-block">
+                <a href="https://google.com" class="external-link button is-normal is-rounded is-dark" target="_blank"style="pointer-events: none; color: grey;">
+                    <span class="icon">
+                      <i class="fa-brands fa-bilibili" aria-hidden="true"></i>
+                    </span>
+                    <span>Bilibili</sdpan>
+                </a>
+              </span> -->
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/TimerChen/RHINO"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa fa-database" aria-hidden="true"></i>
+                  </span>
+                  <span>Dataset</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="https://x.com/ericliuof97/status/1891921410442002753" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                  </span>
+                  <span>Summary</span>
+                </a>
+              </span>
+              
+              <!-- <div class="col-auto" style="padding: 0 1px;">
+                <p class="mb-5"><a class="btn btn-large btn-light" href="javascript:void(0);" role="button" style="pointer-events: none; color: grey;">
+                    <i class="fa fa-database"></i> Dataset</a></p>
+              </div> -->
+              <br>
+              <br>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/web_g1_1.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
+        free-viewpoint
+        portraits.
+      </h2>
+    </div>
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+  <!-- Paper video. -->
+  <div class="columns is-centered has-text-centered">
+    <!-- <div class="column is-four-fifths"> -->
+      <div class="column is-full-width">
+      <h2 class="title is-3">Video</h2>
+      <div class="publication-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ps7dIM_cYqI?si=0BL8lYSIkSpdqLYF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <!-- <video muted="" autoplay loop="" playsinline="" controls="" src="./static/videos/demo_0131_compressed.mp4" width="80%" style="border-radius:10px; "></video> -->
+    </div>
+  </div>
+  <!--/ Paper video. -->
+  </div>
+</section>
+
+<!-- Main Scene -->
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Humanoid-Human-Object Interaction</h2>
+        <!-- <hr>
+        <tr>
+          <td>
+              <h2 class="subtitle">
+                  The robot is able to climb stairs upto 24cm high and only 30cm wide while climbing curbs upto 26cm high. Our policy generalizes to different stairs and curbs under a variety of lighting conditions. On out-of-distribution stairs and curbs, the robot initially gets stuck but is eventually able to traverse them using an emergent climbing up behavior.   
+              </h2>
+          </td>
+        </tr> -->
+          
+            <div class="row">
+              <div class="col">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Dining Waiter</h3>
+                  <video muted="" autoplay loop="" playsinline="" controls="" src="./static/videos/web_scene1.mp4" width="100%" style="border-radius:10px; "></video>
+              </div>
+              <div class="col">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Office Assistant</h3>
+                <video muted="" autoplay loop="" playsinline="" controls="" src="./static/videos/web_scene2.mp4" width="100%" style="border-radius:10px; "></video>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Long-Horizon Planning</h3>
+                  <video muted="" autoplay loop="" playsinline="" controls="" src="./static/videos/web_scene3.mp4" width="100%" style="border-radius:10px; "></video>
+              </div>
+              <div class="col">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> In-task Real-Time Interruption</h3>
+                <video muted="" autoplay loop="" playsinline="" controls="" src="./static/videos/web_in_task.mp4" width="100%" style="border-radius:10px; "></video>
+              </div>
+            </div>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<!-- Long-Time Planning -->
+<!-- <section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Long-Horizon Planning</h2>
+        <hr>
+        <tr>
+          <td>
+              <h2 class="subtitle">
+                  The robot is able to climb stairs upto 24cm high and only 30cm wide while climbing curbs upto 26cm high. Our policy generalizes to different stairs and curbs under a variety of lighting conditions. On out-of-distribution stairs and curbs, the robot initially gets stuck but is eventually able to traverse them using an emergent climbing up behavior.   
+              </h2>
+          </td>
+        </tr>
+          
+            <div class="row">
+              <div class="col" style="text-align: center;">
+                  <video muted="" loop="" playsinline="" controls="" src="./static/videos/web_scene3.mp4" width="70%" style="border-radius:10px; "></video>
+              </div>
+            </div>
+            <br>
+          
+      </div> 
+    </div>
+  </div>
+</section> -->
+
+
+<!-- <section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/steve.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/chair-tp.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/shiba.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/fullbody.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/blueshirt.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/mask.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/coffee.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-toby">
+          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/toby2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- Unsafe -->
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Safety Ensurance</h2>
+        <!-- <hr>
+        <tr>
+          <td>
+              <h2 class="subtitle">
+                  The robot is able to detect unsafe human behaviors and pause the task execution to ensure safety.
+              </h2>
+          </td>
+        </tr> -->
+        
+          
+            <div class="row">
+              <div class="col">
+                  <video autoplay="" muted="" loop="" playsinline="" controls="" src="./static/videos/web_safe1.mp4" width="100%" style="border-radius:10px; "></video>
+              </div>
+              <div class="col">
+                <video autoplay="" muted="" loop="" playsinline="" controls="" src="./static/videos/web_safe2.mp4" width="100%" style="border-radius:10px; "></video>
+            </div>
+            </div>
+            <br>
+          
+        
+      </div> 
+    </div>
+  </div>
+</section>
+
+<!-- Intask interrupt -->
+<!-- <section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">In-task Real-Time Interruption</h2>
+        <div>
+        </div>
+        <hr>
+        <tr>
+          <td>
+              <h2 class="subtitle">
+                Robust manipulation skills allow robots to correctly respond to human interruptions when their intentions are unchanged.
+              </h2>
+          </td>
+        </tr>
+        
+          
+            <div class="row">
+              <div class="col" style="text-align: center;">
+                  <video autoplay="" muted="" loop="" playsinline="" controls="" src="./static/videos/web_in_task.mp4" width="70%" style="border-radius:10px; "></video>
+              </div>
+            </div>
+            <br>
+          
+        
+      </div> 
+    </div>
+  </div>
+</section> -->
+
+<!-- Generalize to humanoids interaction -->
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Generalizes to Interaction between Humanoids</h2>
+        <!-- <hr>
+        <tr>
+          <td>
+              <h2 class="subtitle">
+                Our framework has potential to generalize and interact with humanoid robots.
+              </h2>
+          </td>
+        </tr> -->
+        
+          
+            <div class="row">
+              <div class="col">
+                  <video autoplay="" muted="" loop="" playsinline="" controls="" src="./static/videos/web_g1_1.mp4" width="100%" style="border-radius:10px; "></video>
+              </div>
+              <div class="col">
+                <video autoplay="" muted="" loop="" playsinline="" controls="" src="./static/videos/web_g1_2.mp4" width="100%" style="border-radius:10px; "></video>
+              </div>
+              <div class="col">
+                <video autoplay="" muted="" loop="" playsinline="" controls="" src="./static/videos/web_g1_3.mp4" width="100%" style="border-radius:10px; "></video>
+              </div>
+            </div>
+            <br>
+          
+        
+      </div> 
+    </div>
+  </div>
+</section>
+
+<!-- v.s. E2E -->
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Outperforms End-to-End Model</h2>
+        <!-- <hr>
+        <tr>
+          <td>
+              <h2 class="subtitle">
+                Our framework outperforms the end-to-end model for unseen human clothing or unexpected object arrangement.
+              </h2>
+          </td>
+        </tr> -->
+        <p class="text-center">
+            <div class="row">
+              <div class="col" style="text-align: center;">
+                <video autoplay="" muted="" loop="" playsinline="" controls="" src="./static/videos/web_e2e.mp4" width="70%" style="border-radius:10px; "></video>
+              </div>
+            </div>
+            <br>
+          
+        
+      </div> 
+    </div>
+  </div>
+</section>
+
+
+<!-- Abstract -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2">Abstract</h2>
+        <hr>
+        <div class="content has-text-justified">
+          <p>
+            Humanoid robots have shown success in locomotion and manipulation. Despite these basic abilities, humanoids are
+            still required to quickly understand human instructions and react
+            based on human interaction signals to become valuable assistants
+            in human daily life. Unfortunately, most existing works only
+            focus on multi-stage interactions, treating each task separately,
+            and neglecting real-time feedback. In this work, we aim to
+            empower humanoid robots with real-time reaction abilities to
+            achieve various tasks, allowing human to interrupt robots at any
+            time, and making robots respond to humans immediately. To
+            support such abilities, we propose a general humanoid-human-
+            object interaction framework, named RHINO, i.e., Real-time
+            Humanoid-human Interaction and Object manipulation. RHINO
+            provides a unified view of reactive motion, instruction-based
+            manipulation, and safety concerns, over multiple human signal
+            modalities, such as languages, images, and motions. RHINO is a
+            hierarchical learning framework, enabling humanoids to learn
+            reaction skills from human-human-object demonstrations and
+            teleoperation data. In particular, it decouples the interaction
+            process into two levels: 1) a high-level planner inferring human
+            intentions from real-time human behaviors; and 2) a low-level
+            controller achieving reactive motion behaviors and object manip-
+            ulation skills based on the predicted intentions. We evaluate the
+            proposed framework on a real humanoid robot and demonstrate
+            its effectiveness, flexibility, and safety in various scenarios.
+          </p>
+        </div>
+        <hr>
+        <!-- <br> -->
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="content has-text-justified">
+        <h2 class="title is-2" style="text-align: center;"> Framework </h2>
+        <!-- <hr> -->
+        <img src="static/images/framework.png" width="100%">
+        <br>
+        <h3 class="title is-2" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Model Architecture </h3>
+        <!-- <hr> -->
+        <img src="static/images/method.png" width="100%">
+        <br>
+        <h3 class="title is-2" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Data Source </h3>
+        <!-- <hr> -->
+        <img src="static/images/data_source.png" width="100%">
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{chen2025rhino,
+  author    = {Chen, Jingxiao and Li, Xinyao and Cao, Jiahang and Zhu, Zhengbang and Dong, Wentao and Liu, Minghuan and Wen, Ying and Yu, Yong and Zhang, Liqing and Zhang, Weinan},
+  title     = {RHINO: Learning Real-Time Humanoid-Human-Object Interaction from Human Demonstrations},
+  journal   = {arXiv preprint arXiv:2502.13134},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <!-- <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/RHINO.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://google.com" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div> -->
+    <div class="columns is-centered">
+      <div class="column is-8">
+      <div class="content has-text-centered">
+        <p>
+        Website based on <a href="https://nerfies.github.io/">Nerfies</a> template.
+        </p>
+      </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+>>>>>>> 04c6eba (Added template)
 </body>
 </html>
