@@ -4,8 +4,10 @@ If you find our work useful for your work please cite:
 ```
 @article{positron2025azaz,
   author    = {Azaz Hassan Khan},
-  title     = {POSITRON: Real-Time AI-Driven Behavioral Safety and Hardware Integration for Humanoid Robots},
+  title     = {{Real-Time AI-Driven Behavioral Safety and Hardware Integration for Humanoid Robots}},
+  journal   = {Master's Thesis, Hochschule Darmstadt, in collaboration with Synapticon GmbH},
   year      = {2025},
+  note      = {Master's thesis},
 }
 ```
 
