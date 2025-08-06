@@ -1,12 +1,10 @@
-# RHINO: Learning Real-Time Humanoid-Human-Object Interaction from Human Demonstrations
-
-This is the repository that contains source code for the [website](https://humanoid-interaction.github.io/).
+# POSITRON: Real-Time AI-Driven Behavioral Safety and Hardware Integration for Humanoid Robots
 
 If you find our work useful for your work please cite:
 ```
-@article{rhino2025chen,
-  author    = {Chen*, Jingxiao and Li*, Xinyao and Cao*, Jiahang and Zhu, Zhengbang and Dong, Wentao and Liu, Minghuan and Wen, Ying and Yu, Yong and Zhang, Liqing and Zhang, Weinan},
-  title     = {RHINO: Learning Real-Time Humanoid-Human-Object Interaction from Human Demonstrations},
+@article{positron2025azaz,
+  author    = {Azaz Hassan Khan},
+  title     = {POSITRON: Real-Time AI-Driven Behavioral Safety and Hardware Integration for Humanoid Robots},
   year      = {2025},
 }
 ```
